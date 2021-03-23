@@ -7,7 +7,7 @@ import minimalmodbus as mm
 from databear.errors import MeasureError, SensorConfigError
 from databear.sensors import sensor
 
-class dyaconWSD1(sensor.BusSensor):
+class dbsensor(sensor.BusSensor):
     hardware_settings = {
         'serial':'RS485',
         'duplex':'half',

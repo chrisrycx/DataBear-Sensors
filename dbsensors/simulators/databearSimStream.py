@@ -19,7 +19,7 @@ from databear.sensors import sensor
 import serial
 import re
 
-class databearSimStream(sensor.Sensor):
+class dbsensor(sensor.Sensor):
     hardware_settings = {
         'serial':'RS485',
         'duplex':'half',

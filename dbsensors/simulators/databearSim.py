@@ -9,7 +9,7 @@ import random #To simulate a failure to communicate
 from databear.errors import MeasureError, SensorConfigError
 from databear.sensors import sensor
 
-class databearSim(sensor.Sensor):
+class dbsensor(sensor.Sensor):
     measurements = ['seconds']
     measurement_description = {
         'seconds':'Seconds associated with timestamp',
