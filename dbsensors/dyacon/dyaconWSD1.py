@@ -69,11 +69,8 @@ class dbsensor(sensor.BusSensor):
                 val = val/10
                 self.data[measure].append((starttime,val))
 
-            except mm.NoResponseError as norsp:
+            except mm.NoResponseError:
                 fails[measure] = 'No response from sensor'
-
-            except:
-                raise
                 
         #Raise a measurement error if a fail is detected
         if len(fails)>0:

@@ -9,7 +9,7 @@ import threading
 testlock = threading.Lock()
 
 #Create sensor
-wsd = dyaconWSD1.dyaconWSD1('wsd',222,1)
+wsd = dyaconWSD1.dbsensor('wsd',222,1)
 wsd.connect('COM23',testlock)
 
 #Measure
